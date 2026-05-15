@@ -1,0 +1,52 @@
+@use "../../utils" as *;
+
+.challenge-wrapper {
+  background: var(--secondary-theme-color);
+}
+.section {
+  &-subtitle {
+    color: var(--subtitle-color);
+    font-size: 32px;
+    line-height: 30px;
+  }
+}
+
+.challengecard {
+  padding: 32px 40px 40px 40px;
+  background: var(--primary-theme-color);
+  border-top: 8px solid var(--color-red);
+  box-shadow: 5px 5px 20px rgba(#000000, 0.1);
+
+  &-440 {
+    height: 440px;
+  }
+  &-456 {
+    height: 456px;
+  }
+  &__title {
+    line-height: 26px;
+  }
+}
+
+.ctasection {
+  background: var(--primary-theme-color);
+  padding: 40px;
+  display: flex;
+  gap: 60px;
+  align-items: center;
+  box-shadow: 5px 5px 20px rgba(#000000, 0.1);
+
+  &__thumb {
+    box-shadow: 5px 5px 20px rgba(#000000, 0.1);
+  }
+
+  &__title {
+    line-height: 26px;
+  }
+
+  &__content {
+    & p {
+      line-height: 26px;
+    }
+  }
+}

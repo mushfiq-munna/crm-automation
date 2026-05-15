@@ -1,0 +1,17 @@
+@use "../../utils" as *;
+
+.testimonial {
+  &__card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 5px 5px 20px rgba(#000000, 0.1);
+    border-radius: 15px;
+  }
+
+  &__subtitle {
+    line-height: 26px;
+    margin-bottom: 0;
+  }
+}

@@ -1,0 +1,14 @@
+@use "../../utils" as *;
+
+.concept-quote {
+  &-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &-text {
+    font-size: 28px;
+    line-height: 40px;
+  }
+}

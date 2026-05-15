@@ -1,0 +1,41 @@
+@use "../../utils" as *;
+
+.feature-area {
+  background: var(--secondary-theme-color);
+}
+
+.featurecard {
+  padding: 40px;
+  background: var(--primary-theme-color);
+  // box-shadow: var(--shadow-primary);
+
+  box-shadow: 5px 5px 20px rgba(#000000, 0.1);
+
+  &__subtitle {
+    color: var(--subtitle-color);
+  }
+
+  &__title {
+    line-height: 26px;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+  }
+
+  &__num {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 32px;
+    width: 32px;
+    font-size: 24px;
+    color: var(--primary-theme-color);
+    background: linear-gradient(to top, #ee5102 0%, #f5a52b 100%);
+    padding: 3px 12px;
+    border-radius: 50%;
+    font-weight: bold;
+  }
+}

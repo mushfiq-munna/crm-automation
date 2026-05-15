@@ -1,0 +1,35 @@
+@use "../../utils" as *;
+
+.header {
+  &-wrapper {
+    background: var(--primary-theme-color);
+    padding: 20px 100px 20px 70px;
+    box-shadow: 0 15px 30px rgba(#000000, 0.1);
+  }
+
+  &-menu {
+    padding: 20px;
+    & nav {
+      & ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        & li {
+          margin-right: 60px;
+          & a {
+            color: var(--primary-color-2);
+            font-weight: 400;
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+
+  &-logo {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+  }
+}

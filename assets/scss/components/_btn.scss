@@ -1,0 +1,53 @@
+@use "../utils" as *;
+
+.primary-btn {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  & a {
+    color: var(--primary-theme-color);
+    font-size: 18px;
+    background: var(--secondary-color);
+    border-radius: 24px;
+    padding: 17px 33px;
+    box-shadow: 0 10px 20px rgba(#ff8a00, 0.3);
+  }
+}
+
+.secondary-btn {
+  display: inline-flex;
+  align-items: center;
+  background: var(--color-green);
+  padding: 15px 40px;
+  border-radius: 100px;
+  box-shadow: 0 4px 40px rgba(#2dad00, 0.5);
+  & a {
+    font-size: 24px;
+    font-family: var(--font-body);
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--primary-theme-color);
+  }
+}
+
+// hero button
+
+.hero-btn-wrapper {
+  & button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px 10px 10px;
+    background: linear-gradient(to top, #ffa146 0%, #d85c20 100%);
+    box-shadow: 5px 5px 20px rgba($color: #000000, $alpha: 0.1);
+    border: 1px solid #d95d20;
+    border-radius: 50px;
+    & p {
+      margin-bottom: 0;
+      color: var(--primary-theme-color);
+      font-size: 21px;
+      font-weight: 600;
+      margin-left: 10px;
+    }
+  }
+}
