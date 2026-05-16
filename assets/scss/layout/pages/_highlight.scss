@@ -1,0 +1,32 @@
+@use "../../utils" as *;
+
+.highlight {
+  &-area {
+    background: var(--color-black-2);
+  }
+
+  &-content {
+    &-num {
+      color: #e94d03;
+      font-size: 62px;
+      font-weight: bold;
+      line-height: 1;
+      display: inline-block;
+
+      &-text {
+        font-size: 28px;
+        line-height: 40px;
+      }
+    }
+  }
+  &-footer {
+    align-items: center;
+    font-weight: light;
+
+    & span {
+      color: #ea4c02;
+      font-size: 22px;
+      line-height: 30px;
+    }
+  }
+}

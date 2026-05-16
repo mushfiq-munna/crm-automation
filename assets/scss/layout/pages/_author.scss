@@ -1,0 +1,22 @@
+@use "../../utils" as *;
+
+.author {
+  &__stat {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    &-num {
+      font-size: 53px;
+      font-weight: bold;
+    }
+
+    &-label {
+      & span {
+        color: var(--subtitle-color);
+      }
+    }
+  }
+  &-thumb {
+    box-shadow: 5px 5px 20px rgba(#000000, 0.1);
+  }
+}

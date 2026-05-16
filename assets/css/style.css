@@ -7,6 +7,12 @@
 }
 @font-face {
   font-family: "proximaNova";
+  src: url(/assets/fonts/ProximaNova-Light.ttf);
+  font-weight: 300;
+  font-size: normal;
+}
+@font-face {
+  font-family: "proximaNova";
   src: url(/assets/fonts/ProximaNova-Semibold.ttf);
   font-weight: 600;
   font-size: normal;
@@ -36,6 +42,7 @@
   --color-green-light: #00bc64;
   --color-red: #d82327;
   --color-black: #000000;
+  --color-black-2: #171b23;
 }
 
 :root {
@@ -352,10 +359,10 @@ button:focus {
   font-weight: 700;
 }
 
-.pf-text-white {
+.tc-white {
   color: #fff;
 }
-.pf-text-gray {
+.tc-gray {
   color: #99a1af;
 }
 
@@ -6950,23 +6957,8 @@ button:focus {
 .challengecard__title {
   line-height: 26px;
 }
-
-.ctasection {
-  background: var(--primary-theme-color);
-  padding: 40px;
-  display: flex;
-  gap: 60px;
-  align-items: center;
-  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
-}
-.ctasection__thumb {
-  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
-}
-.ctasection__title {
-  line-height: 26px;
-}
-.ctasection__content p {
-  line-height: 26px;
+.challengecard__gr-b {
+  border-top: 8px solid var(--color-green-light);
 }
 
 .concept-quote-section {
@@ -6986,6 +6978,8 @@ button:focus {
 .featurecard {
   padding: 40px;
   background: var(--primary-theme-color);
+  width: 640px;
+  height: 642px;
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
 }
 .featurecard__subtitle {
@@ -7011,6 +7005,71 @@ button:focus {
   padding: 3px 12px;
   border-radius: 50%;
   font-weight: bold;
+}
+
+.highlight-area {
+  background: var(--color-black-2);
+}
+.highlight-content-num {
+  color: #e94d03;
+  font-size: 62px;
+  font-weight: bold;
+  line-height: 1;
+  display: inline-block;
+}
+.highlight-content-num-text {
+  font-size: 28px;
+  line-height: 40px;
+}
+.highlight-footer {
+  align-items: center;
+  font-weight: light;
+}
+.highlight-footer span {
+  color: #ea4c02;
+  font-size: 22px;
+  line-height: 30px;
+}
+
+.author__stat {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+}
+.author__stat-num {
+  font-size: 53px;
+  font-weight: bold;
+}
+.author__stat-label span {
+  color: var(--subtitle-color);
+}
+.author-thumb {
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.ctasection {
+  background: var(--primary-theme-color);
+  padding: 40px;
+  display: flex;
+  gap: 60px;
+  align-items: center;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+}
+.ctasection__thumb {
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+}
+.ctasection__title {
+  line-height: 26px;
+}
+.ctasection__title-2 {
+  line-height: 43px;
+}
+.ctasection__content p {
+  line-height: 26px;
+}
+.ctasection-2 {
+  padding: 70px 140px;
+  gap: 48px;
 }
 
 /*# sourceMappingURL=style.css.map */
