@@ -99,8 +99,6 @@
   }
 }
 
-.bottom-m-20 {
-  @media #{$sm, $xs} {
-    margin-bottom: 20px;
-  }
+.lst-cha-m:last-child {
+  margin-bottom: 0;
 }

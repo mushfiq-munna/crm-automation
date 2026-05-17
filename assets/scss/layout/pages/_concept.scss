@@ -39,4 +39,10 @@
   @media #{$sm, $xs} {
     padding-left: 0;
   }
+  & p {
+    @media #{$sm, $xs} {
+      font-size: 16px;
+      line-height: 26px;
+    }
+  }
 }

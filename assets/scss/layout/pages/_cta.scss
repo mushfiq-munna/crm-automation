@@ -1,11 +1,16 @@
 @use "../../utils" as *;
 
+.cta-area {
+  background: var(--secondary-theme-color);
+  @media #{$sm, $xs} {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
 .ctasection {
   background: var(--primary-theme-color);
   padding: 40px;
-  display: flex;
-  gap: 60px;
-  align-items: center;
   box-shadow: 5px 5px 20px rgba(#000000, 0.1);
 
   @media #{$sm, $xs} {
@@ -14,8 +19,24 @@
 
   &__thumb {
     box-shadow: 5px 5px 20px rgba(#000000, 0.1);
+    width: 304px;
     @media #{$sm, $xs} {
       margin-bottom: 20px;
+      width: 280px;
+    }
+    & img {
+      @media #{$sm, $xs} {
+        width: 280px;
+      }
+    }
+
+    &-2 {
+      & img {
+        @media #{$sm, $xs} {
+          width: 280px;
+          height: 182px;
+        }
+      }
     }
   }
 
@@ -33,9 +54,11 @@
   }
 
   &__content {
+    @media #{$sm, $xs} {
+      padding-left: 0;
+    }
     & p {
       line-height: 26px;
-
       @media #{$sm, $xs} {
         font-size: 16px;
         margin-bottom: 20px;
@@ -43,8 +66,8 @@
     }
   }
 
-  &-2 {
-    padding: 70px 140px;
-    gap: 48px;
-  }
+  // &-2 {
+  //   padding: 70px 140px;
+  //   gap: 48px;
+  // }
 }

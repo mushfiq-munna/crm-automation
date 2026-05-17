@@ -3,6 +3,10 @@
 .highlight {
   &-area {
     background: var(--color-black-2);
+    @media #{$sm, $xs} {
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
   }
 
   &-content {
@@ -13,20 +17,47 @@
       line-height: 1;
       display: inline-block;
 
-      &-text {
-        font-size: 28px;
-        line-height: 40px;
+      @media #{$sm, $xs} {
+        font-size: 34px;
+        margin-bottom: 20px;
+      }
+    }
+    &-text {
+      font-size: 28px;
+      line-height: 40px;
+      @media #{$sm, $xs} {
+        font-size: 18px;
+        line-height: 24px;
+        margin-bottom: 20px;
+        & br {
+          display: none;
+        }
       }
     }
   }
   &-footer {
     align-items: center;
-    font-weight: light;
+    font-weight: 400;
 
     & span {
       color: #ea4c02;
       font-size: 22px;
       line-height: 30px;
+      @media #{$sm, $xs} {
+        font-size: 16px;
+        line-height: 26px;
+      }
+    }
+
+    & p {
+      @media #{$sm, $xs} {
+        font-size: 16px;
+        line-height: 26px;
+        margin: 0;
+        & br {
+          display: none;
+        }
+      }
     }
   }
 }

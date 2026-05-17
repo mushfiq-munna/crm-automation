@@ -1,24 +1,54 @@
 @use "../../utils" as *;
 
 .author {
+  &-section {
+    @media #{$sm, $xs} {
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
+  }
   &__stat {
     display: flex;
     justify-content: start;
     align-items: start;
+    @media #{$sm, $xs} {
+      align-items: center;
+    }
     &-2 {
       justify-content: center;
     }
     &-num {
       font-size: 53px;
       font-weight: bold;
+      @media #{$sm, $xs} {
+        font-size: 30px;
+      }
     }
 
     &-label {
       & span {
         color: var(--subtitle-color);
       }
+      @media #{$sm, $xs} {
+        font-size: 16px;
+        line-height: 18px;
+      }
     }
   }
+
+  &-desc {
+    @media #{$sm, $xs} {
+      margin-right: 0;
+      margin-bottom: 0;
+    }
+    & p {
+      @media #{$sm, $xs} {
+        font-size: 16px;
+        line-height: 26px;
+      }
+    }
+  }
+
   &-thumb {
     box-shadow: 5px 5px 20px rgba(#000000, 0.1);
   }

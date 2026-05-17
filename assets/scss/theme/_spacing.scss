@@ -57,7 +57,7 @@
   }
 }
 
-.m {
+.mar {
   &-0 {
     margin: 0;
   }
@@ -103,4 +103,28 @@
     padding-left: 100px;
     padding-right: 100px;
   }
+}
+.bottom-m-0 {
+  @media #{$sm, $xs} {
+    margin-bottom: 0px;
+  }
+}
+.bottom-m-20 {
+  @media #{$sm, $xs} {
+    margin-bottom: 20px;
+  }
+}
+.bottom-m-25 {
+  @media #{$sm, $xs} {
+    margin-bottom: 25px;
+  }
+}
+.bottom-m-30 {
+  @media #{$sm, $xs} {
+    margin-bottom: 30px;
+  }
+}
+
+.lef-p-55 {
+  padding-left: 55px;
 }

@@ -3,28 +3,85 @@
 .footer {
   &-area {
     background: var(--color-black-2);
+    @media #{$sm, $xs} {
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
   }
 
   &-left {
     padding-right: 170px;
     border-right: 1px solid #3e4c54;
+    @media #{$sm, $xs} {
+      padding-right: 0;
+      border-right: none;
+    }
   }
 
-  &-brand-tagline {
-    font-size: 21px;
-    color: var(--primary-theme-color);
-    padding-bottom: 36px;
-    border-bottom: 1px solid #3e4c54;
-    margin-bottom: 32px;
+  &-right {
+    @media #{$sm, $xs} {
+      margin-left: 0;
+      border-right: none;
+    }
   }
 
-  &-addresses-wrapper {
-    border-bottom: 1px solid #3e4c54;
+  &-brand {
+    @media #{$sm, $xs} {
+      text-align: center;
+    }
+    &-tagline {
+      font-size: 21px;
+      color: var(--primary-theme-color);
+      padding-bottom: 36px;
+      border-bottom: 1px solid #3e4c54;
+      margin-bottom: 32px;
+      @media #{$sm, $xs} {
+        font-size: 14px;
+        padding-bottom: 20px;
+      }
+    }
+    &-logo {
+      @media #{$sm, $xs} {
+        margin-bottom: 5px;
+      }
+      & img {
+        @media #{$sm, $xs} {
+          width: 226px;
+        }
+      }
+    }
+
+    &-part {
+      & img {
+        @media #{$sm, $xs} {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  &-addresses {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media #{$sm, $xs} {
+      flex-direction: column;
+      align-items: start;
+    }
+    &-wrapper {
+      border-bottom: 1px solid #3e4c54;
+      @media #{$sm, $xs} {
+        margin-bottom: 20px;
+      }
+    }
   }
 
   &-address {
     font-size: 14px;
     line-height: 24px;
+    @media #{$sm, $xs} {
+      margin-bottom: 20px;
+    }
   }
 
   &-phone {
@@ -32,6 +89,9 @@
     justify-content: start;
     align-items: center;
     color: var(--primary-theme-color);
+    @media #{$sm, $xs} {
+      margin-bottom: 20px;
+    }
 
     &-num {
       font-size: 20px;
@@ -43,12 +103,24 @@
   }
 
   &-socials {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     border-bottom: 1px solid #3e4c54;
+    @media #{$sm, $xs} {
+      flex-direction: column;
+      align-items: center;
+      padding-bottom: 20px;
+      margin-bottom: 20px;
+    }
     &-head {
       color: var(--primary-color-light);
       font-size: 18px;
       font-weight: 600;
       margin-bottom: 0;
+      @media #{$sm, $xs} {
+        margin-bottom: 20px;
+      }
     }
     &-link {
       display: flex;
@@ -81,20 +153,29 @@
 
   &-menu {
     &-title {
+      @media #{$sm, $xs} {
+        margin-top: 40px;
+      }
     }
     & ul {
       list-style: none;
       & li {
         display: flex;
         align-items: center;
+
         & a {
           color: var(--primary-theme-color);
           font-size: 14px;
           line-height: 35px;
           font-weight: 400;
           margin-bottom: 5px;
+          position: relative;
+          padding-left: 15px;
           & i {
             color: var(--primary-color-light);
+            position: absolute;
+            left: 0;
+            top: 9px;
           }
         }
       }
@@ -103,11 +184,15 @@
 
   &-widget-wrapper {
     border-bottom: 1px solid #3e4c54;
+    @media #{$sm, $xs} {
+      margin-bottom: 40px;
+      padding-bottom: 40px;
+    }
   }
 
   &-review {
     &-icons {
-      border: 1px solid #fff;
+      border: 1px solid var(--primary-color-light);
       border-radius: 10px;
       padding: 5px 10px 20px 10px;
 
@@ -125,5 +210,12 @@
         font-size: 30px;
       }
     }
+  }
+}
+
+.f-plr-20 {
+  @media #{$sm, $xs} {
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
