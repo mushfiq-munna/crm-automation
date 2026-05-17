@@ -7525,9 +7525,6 @@ button:focus {
     width: 280px;
   }
 }
-.ctasection__thumb-304 {
-  width: 304px;
-}
 @media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
   .ctasection__thumb img {
     width: 280px;

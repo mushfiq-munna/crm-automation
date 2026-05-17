@@ -24,9 +24,9 @@
       margin-bottom: 20px;
       width: 280px;
     }
-    &-304 {
-      width: 304px;
-    }
+    // &-304 {
+    //   width: 304px;
+    // }
     & img {
       @media #{$sm, $xs} {
         width: 280px;
