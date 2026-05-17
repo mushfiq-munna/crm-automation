@@ -17,14 +17,14 @@
       <div class="header-wrapper p-relative z-9">
         <div class="container-fluid">
           <div class="row d-flex justify-content-center align-items-center">
-            <div class="col-xl-3">
+            <div class="col-xl-3 col-8">
               <div class="header-logo">
                 <a href="#">
                   <img src="./assets/img/logo/logo-header.png" alt="" />
                 </a>
               </div>
             </div>
-            <div class="col-xl-6">
+            <div class="col-xl-6 d-none d-md-block">
               <div class="header-menu">
                 <nav>
                   <ul>
@@ -34,9 +34,14 @@
                 </nav>
               </div>
             </div>
-            <div class="col-xl-3">
-              <div class="primary-btn uppercase fw-700">
+            <div class="col-xl-3 col-4">
+              <div class="primary-btn d-none d-md-block uppercase fw-700">
                 <a href="#">Book a Meeting</a>
+              </div>
+              <div class="header-bar d-md-none">
+                <a href="#">
+                  <i class="fas fa-bars"></i>
+                </a>
               </div>
             </div>
           </div>
@@ -100,15 +105,15 @@
       <div class="testimonial pb-120">
         <div class="container">
           <div class="row">
-            <div class="col-xl-6">
-              <div class="testimonial__card">
+            <div class="col-xl-6 col-12">
+              <div class="testimonial__card mb-20">
                 <div class="testimonial__thumb mr-20 br-10">
                   <img
                     src="./assets/img/testimonial/testimonial-th-1.jpg"
                     alt=""
                   />
                 </div>
-                <div class="testimonial__content text-center">
+                <div class="testimonial__content text-md-center">
                   <p>
                     "Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                     sed do eiusmod tempor incididunt” 
@@ -117,15 +122,16 @@
                 </div>
               </div>
             </div>
-            <div class="col-xl-6">
-              <div class="testimonial__card">
+
+            <div class="col-xl-6 col-12">
+              <div class="testimonial__card mb-20">
                 <div class="testimonial__thumb mr-20 br-10">
                   <img
                     src="./assets/img/testimonial/testimonial-th-2.jpg"
                     alt=""
                   />
                 </div>
-                <div class="testimonial__content text-center">
+                <div class="testimonial__content text-md-center">
                   <p>
                     “Exercitation ullamco laboris nisi ut aliquip ex ea commodo
                     consequat. Duis aute irure dolor in.”
@@ -152,20 +158,24 @@
               who already did.
             </p>
           </div>
-          <div class="row mb-120">
+          <div class="row mb-120 bottom-m-20">
             <!-- Challenge Card-1 -->
-            <div class="col-xl-4 mb-40">
-              <div class="challengecard challengecard-440 br-15">
-                <div class="challengecard__icon mb-20">
-                  <img
-                    src="./assets/img/challenge/challenge-card-icon-1.png"
-                    alt=""
-                  />
+            <div class="col-xl-4 mb-40 bottom-m-20">
+              <div
+                class="challengecard challengecard-440 challengecard-235 br-15"
+              >
+                <div class="challengecard__header">
+                  <div class="challengecard__icon mb-20 mr-10">
+                    <img
+                      src="./assets/img/challenge/challenge-card-icon-1.png"
+                      alt=""
+                    />
+                  </div>
+                  <h4 class="challengecard__title mb-20">
+                    You’re losing deals in the time it takes to respond manually
+                  </h4>
                 </div>
-                <h4 class="challengecard__title mb-20">
-                  You’re losing deals in the time it takes to respond manually
-                </h4>
-                <div class="challenge__content">
+                <div class="challengecard__content">
                   <p class="mb-0">
                     Speed is a competitive weapon. While your team is checking
                     emails and updating spreadsheets, an automated competitor
@@ -176,18 +186,22 @@
               </div>
             </div>
             <!-- Challenge Card-2 -->
-            <div class="col-xl-4 mb-40">
-              <div class="challengecard challengecard-440 br-15">
-                <div class="challengecard__icon mb-20">
-                  <img
-                    src="./assets/img/challenge/challenge-card-icon-2.png"
-                    alt=""
-                  />
+            <div class="col-xl-4 mb-40 bottom-m-20">
+              <div
+                class="challengecard challengecard-440 challengecard-235 br-15"
+              >
+                <div class="challengecard__header">
+                  <div class="challengecard__icon mb-20 mr-10">
+                    <img
+                      src="./assets/img/challenge/challenge-card-icon-2.png"
+                      alt=""
+                    />
+                  </div>
+                  <h4 class="challengecard__title mb-20">
+                    Mistakes happen because humans are doing machines’ jobs
+                  </h4>
                 </div>
-                <h4 class="challengecard__title mb-20">
-                  Mistakes happen because humans are doing machines’ jobs
-                </h4>
-                <div class="challenge__content">
+                <div class="challengecard__content">
                   <p class="mb-0">
                     Manual data entry, manual follow-ups, manual stage updates.
                     Every human touchpoint is a place where things get
@@ -197,18 +211,23 @@
               </div>
             </div>
             <!-- Challenge Card-3 -->
-            <div class="col-xl-4 mb-40">
-              <div class="challengecard challengecard-440 br-15">
-                <div class="challengecard__icon mb-20">
-                  <img
-                    src="./assets/img/challenge/challenge-card-icon-3.png"
-                    alt=""
-                  />
+            <div class="col-xl-4 mb-40 bottom-m-20">
+              <div
+                class="challengecard challengecard-440 challengecard-235 br-15"
+              >
+                <div class="challengecard__header">
+                  <div class="challengecard__icon mb-20 mr-10">
+                    <img
+                      src="./assets/img/challenge/challenge-card-icon-3.png"
+                      alt=""
+                    />
+                  </div>
+                  <h4 class="challengecard__title mb-30">
+                    Your best people are doing work that shouldn’t require them
+                  </h4>
                 </div>
-                <h4 class="challengecard__title mb-30">
-                  Your best people are doing work that shouldn’t require them
-                </h4>
-                <div class="challenge__content">
+
+                <div class="challengecard__content">
                   <p class="mb-0">
                     When skilled salespeople spend their day on admin,
                     scheduling, and data cleanup, you’re paying for expertise
@@ -218,16 +237,23 @@
               </div>
             </div>
             <!-- Challenge Card-4 -->
-            <div class="col-xl-4 mb-40">
-              <div class="challengecard challengecard-456 br-15">
-                <div class="challengecard__icon mb-20">
-                  <img
-                    src="./assets/img/challenge/challenge-card-icon-4.png"
-                    alt=""
-                  />
+            <div class="col-xl-4 mb-40 bottom-m-20">
+              <div
+                class="challengecard challengecard-440 challengecard-235 br-15"
+              >
+                <div class="challengecard__header">
+                  <div class="challengecard__icon mb-20 mr-10">
+                    <img
+                      src="./assets/img/challenge/challenge-card-icon-3.png"
+                      alt=""
+                    />
+                  </div>
+                  <h4 class="challengecard__title mb-30">
+                    You have no playbook
+                  </h4>
                 </div>
-                <h4 class="challengecard__title mb-30">You have no playbook</h4>
-                <div class="challenge__content">
+
+                <div class="challengecard__content">
                   <p class="mb-0">
                     so every rep runs their own game — Without stage-based
                     playbooks and automated prompts, performance depends
@@ -238,18 +264,23 @@
               </div>
             </div>
             <!-- Challenge Card-5 -->
-            <div class="col-xl-4 mb-40">
-              <div class="challengecard challengecard-456 br-15">
-                <div class="challengecard__icon mb-20">
-                  <img
-                    src="./assets/img/challenge/challenge-card-icon-5.png"
-                    alt=""
-                  />
+            <div class="col-xl-4 mb-40 bottom-m-20">
+              <div
+                class="challengecard challengecard-440 challengecard-235 br-15"
+              >
+                <div class="challengecard__header">
+                  <div class="challengecard__icon mb-20 mr-10">
+                    <img
+                      src="./assets/img/challenge/challenge-card-icon-3.png"
+                      alt=""
+                    />
+                  </div>
+                  <h4 class="challengecard__title mb-30">
+                    There’s no system creating consistent, repetitive engagement
+                  </h4>
                 </div>
-                <h4 class="challengecard__title mb-20">
-                  There’s no system creating consistent, repetitive engagement
-                </h4>
-                <div class="challenge__content">
+
+                <div class="challengecard__content">
                   <p class="mb-0">
                     Nurture sequences, renewal touchpoints, winback campaigns —
                     these should run automatically. Instead they happen whenever
@@ -259,18 +290,23 @@
               </div>
             </div>
             <!-- Challenge Card-6 -->
-            <div class="col-xl-4 mb-40">
-              <div class="challengecard challengecard-456 br-15">
-                <div class="challengecard__icon mb-20">
-                  <img
-                    src="./assets/img/challenge/challenge-card-icon-6.png"
-                    alt=""
-                  />
+            <div class="col-xl-4 mb-40 bottom-m-20">
+              <div
+                class="challengecard challengecard-440 challengecard-235 br-15"
+              >
+                <div class="challengecard__header">
+                  <div class="challengecard__icon mb-20 mr-10">
+                    <img
+                      src="./assets/img/challenge/challenge-card-icon-6.png"
+                      alt=""
+                    />
+                  </div>
+                  <h4 class="challengecard__title mb-30">
+                    You can’t scale what depends on memory and effort
+                  </h4>
                 </div>
-                <h4 class="challengecard__title mb-30">
-                  You can’t scale what depends on memory and effort
-                </h4>
-                <div class="challenge__content">
+
+                <div class="challengecard__content">
                   <p class="mb-0">
                     A business that runs on individual heroics has a ceiling.
                     Growth requires processes that replicate themselves — not
@@ -281,12 +317,16 @@
             </div>
           </div>
 
-          <div class="row">
-            <div class="col-12">
-              <div class="ctasection br-15">
-                <div class="ctasection__thumb br-15">
+          <!-- CTA Section -->
+          <div class="ctasection br-15">
+            <div class="row d-flex align-items-center">
+              <div class="col-xl-3 col-12">
+                <div class="ctasection__thumb w-img br-15">
                   <img src="./assets/img/challenge/cta-th-1.jpg" alt="" />
                 </div>
+              </div>
+
+              <div class="col-xl-9 col-12">
                 <div class="ctasection__content">
                   <h2 class="ctasection__title mb-30">
                     Stop letting your competitors outpace you.
@@ -311,7 +351,7 @@
           <div class="section-title-wrapper mb-40">
             <p class="section-subtitle text-center fw-400 mb-20">The Concept</p>
 
-            <div class="concept-quote-section">
+            <div class="concept-quote-section d-flex flex-column flex-md-row">
               <div class="concept-quote-th mr-20">
                 <img src="./assets/img/icon/concept-quote.png" alt="" />
               </div>
@@ -323,14 +363,14 @@
               </p>
             </div>
           </div>
-          <div class="row">
-            <div class="col-xl-5">
+          <div class="row d-flex flex-column-reverse flex-md-row">
+            <div class="col-xl-5 col-lg-5 col-sm-12">
               <div class="concept-thumb w-img">
                 <img src="./assets/img/concept/concepth-thumb.png" alt="" />
               </div>
             </div>
-            <div class="col-xl-7">
-              <div class="concept-details">
+            <div class="col-xl-7 col-lg-7 col-sm-12">
+              <div class="concept-details pl-10">
                 <p>
                   At the start of 2025, Lior set out to research what automation
                   specialists, CRM implementers, and business consultants were
@@ -366,15 +406,15 @@
       <div class="testimonial pb-120">
         <div class="container">
           <div class="row">
-            <div class="col-xl-6">
-              <div class="testimonial__card">
+            <div class="col-xl-6 col-12">
+              <div class="testimonial__card mb-20">
                 <div class="testimonial__thumb mr-20 br-10">
                   <img
                     src="./assets/img/testimonial/testimonial-th-3.jpg"
                     alt=""
                   />
                 </div>
-                <div class="testimonial__content text-center">
+                <div class="testimonial__content text-md-center">
                   <p>
                     "Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                     sed do eiusmod tempor incididunt” 
@@ -383,18 +423,18 @@
                 </div>
               </div>
             </div>
-            <div class="col-xl-6">
-              <div class="testimonial__card">
+            <div class="col-xl-6 col-12">
+              <div class="testimonial__card mb-20">
                 <div class="testimonial__thumb mr-20 br-10">
                   <img
                     src="./assets/img/testimonial/testimonial-th-4.jpg"
                     alt=""
                   />
                 </div>
-                <div class="testimonial__content text-center">
+                <div class="testimonial__content text-md-center">
                   <p>
                     “Ut enim ad minima veniam, quis nostrum exercitationem ullam
-                    corporis suscipit laboriosam, nisi ut aliquid ex”
+                    corporis suscipit laboriosam, nisi ut aliquid ex” 
                   </p>
                   <h4 class="testimonial__subtitle">Jason Miller</h4>
                 </div>
@@ -424,7 +464,7 @@
             </p>
           </div>
 
-          <div class="row mb-120">
+          <div class="row mb-120 bottom-m-40">
             <!-- feature card 1 -->
             <div class="col-xl-6 mb-40">
               <div class="featurecard br-15">
@@ -603,13 +643,16 @@
             </div>
           </div>
 
-          <!-- CTA Area -->
-          <div class="row">
-            <div class="col-12">
-              <div class="ctasection flex-row-reverse br-15">
-                <div class="ctasection__thumb br-15">
+          <!-- CTA Section -->
+          <div class="ctasection br-15">
+            <div class="row d-flex align-items-center">
+              <div class="col-xl-3 col-12">
+                <div class="ctasection__thumb w-img br-15">
                   <img src="./assets/img/challenge/cta-th-1.jpg" alt="" />
                 </div>
+              </div>
+
+              <div class="col-xl-9 col-12">
                 <div class="ctasection__content">
                   <h2 class="ctasection__title mb-30">
                     Stop letting your competitors outpace you.
@@ -914,9 +957,9 @@
                 </div>
 
                 <div class="col-xl-4">
-                  <div class="author__stat">
-                    <p class="author__stat-label m-0">2013</p>
-                    <h4 class="author__stat-num mr-10">Since</h4>
+                  <div class="author__stat author__stat-2">
+                    <p class="author__stat-label m-0">Since</p>
+                    <h4 class="author__stat-num mr-10">2013</h4>
                   </div>
                 </div>
               </div>
@@ -1236,7 +1279,7 @@
               <div class="footer-cta-wrapper">
                 <div class="row">
                   <div class="col-xl-4 mb-49">
-                    <div class="footer-brand-part">
+                    <div class="footer-brand-part br-10">
                       <img
                         src="./assets/img/footer/footer-brand-2.png"
                         alt=""
@@ -1244,20 +1287,22 @@
                     </div>
                   </div>
                   <div class="col-xl-4 mb-49">
-                    <div class="footer-brand-part">
+                    <div class="footer-brand-part br-10">
                       <img src="./assets/img/footer/footer-brand.png" alt="" />
                     </div>
                   </div>
                   <div class="col-xl-4 mb-49">
-                    <div class="footer-review">
-                      <div class="footer-review-icon">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
+                    <div class="footer-review text-center">
+                      <div class="footer-review-icons">
+                        <div class="footer-review-icon gx-0">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </div>
+                        <h5 class="uppercase">Our 5 Star Reviews</h5>
                       </div>
-                      <h5>Our 5 Star Reviews</h5>
                     </div>
                   </div>
                   <div class="col-xl-4">

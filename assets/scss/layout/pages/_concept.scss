@@ -1,6 +1,23 @@
 @use "../../utils" as *;
 
+.concept-wrapper {
+  @media #{$sm, $xs} {
+    padding: 60px 20px;
+  }
+}
+
 .concept-quote {
+  &-th {
+    @media #{$sm, $xs} {
+      margin-bottom: 20px;
+      margin-right: 0;
+    }
+    & img {
+      @media #{$sm, $xs} {
+        width: 75px;
+      }
+    }
+  }
   &-section {
     display: flex;
     justify-content: center;
@@ -10,5 +27,16 @@
   &-text {
     font-size: 28px;
     line-height: 40px;
+    @media #{$sm, $xs} {
+      font-size: 16px;
+      line-height: 26px;
+      margin-bottom: 0;
+    }
+  }
+}
+
+.concept-details {
+  @media #{$sm, $xs} {
+    padding-left: 0;
   }
 }

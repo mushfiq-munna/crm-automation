@@ -684,7 +684,7 @@ progress {
 .container-sm,
 .container-xl,
 .container-xxl {
-  --bs-gutter-x: 30px;
+  --bs-gutter-x: 40px;
   --bs-gutter-y: 0;
   width: 100%;
   padding-right: calc(var(--bs-gutter-x) * 0.5);

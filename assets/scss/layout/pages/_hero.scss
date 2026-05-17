@@ -3,11 +3,21 @@
 .hero {
   &-wrapper {
     background: linear-gradient(to top, #ffffff 1%, #b9d5e5 58%, #ffffff 100%);
+
+    @media #{$sm, $xs} {
+      padding-top: 20px;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
   }
   &-content {
     &-title {
       color: var(--color-black);
       line-height: 54px;
+      @media #{$sm, $xs} {
+        font-size: 16px;
+        line-height: 1.2;
+      }
     }
     &-text {
       & p {
@@ -22,5 +32,25 @@
     display: flex;
     justify-content: end;
     align-items: center;
+  }
+
+  &-title {
+    @media #{$sm, $xs} {
+      font-size: 24px;
+    }
+
+    &-wrapper {
+      @media #{$sm, $xs} {
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  &-subtitle {
+    @media #{$sm, $xs} {
+      font-size: 12px;
+      font-weight: 700;
+      line-height: 1.3;
+    }
   }
 }

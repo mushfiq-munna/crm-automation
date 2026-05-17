@@ -2,12 +2,39 @@
 
 .challenge-wrapper {
   background: var(--secondary-theme-color);
+  @media #{$sm, $xs} {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 .section {
   &-subtitle {
     color: var(--subtitle-color);
     font-size: 32px;
     line-height: 30px;
+    @media #{$sm, $xs} {
+      font-size: 16px;
+      line-height: 26px;
+    }
+  }
+
+  &-title {
+    @media #{$sm, $xs} {
+      font-size: 24px;
+    }
+
+    &-text {
+      @media #{$sm, $xs} {
+        font-size: 16px;
+        line-height: 26px;
+      }
+    }
+
+    &-wrapper {
+      @media #{$sm, $xs} {
+        margin-bottom: 20px;
+      }
+    }
   }
 }
 
@@ -17,16 +44,63 @@
   border-top: 8px solid var(--color-red);
   box-shadow: 5px 5px 20px rgba(#000000, 0.1);
 
+  @media #{$sm, $xs} {
+    padding: 16px 20px 20px 20px;
+    border-top: 4px solid var(--color-red);
+  }
   &-440 {
     height: 440px;
   }
   &-456 {
     height: 456px;
   }
+  &-235 {
+    @media #{$sm, $xs} {
+      height: 235px;
+    }
+  }
+
   &__title {
     line-height: 26px;
+    @media #{$sm, $xs} {
+      margin-bottom: 10px;
+      font-size: 18px;
+      line-height: 1.1;
+    }
   }
   &__gr-b {
     border-top: 8px solid var(--color-green-light);
+  }
+
+  &__content {
+    & p {
+      @media #{$sm, $xs} {
+        font-size: 16px;
+        line-height: 26px;
+      }
+    }
+  }
+
+  &__header {
+    @media #{$sm, $xs} {
+      display: flex;
+    }
+  }
+
+  &__icon {
+    @media #{$sm, $xs} {
+      margin-bottom: 10px;
+    }
+    & img {
+      @media #{$sm, $xs} {
+        height: 28px;
+      }
+    }
+  }
+}
+
+.bottom-m-20 {
+  @media #{$sm, $xs} {
+    margin-bottom: 20px;
   }
 }

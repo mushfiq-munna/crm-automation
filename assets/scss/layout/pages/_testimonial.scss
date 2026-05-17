@@ -4,14 +4,45 @@
   &__card {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: start;
     padding: 20px;
     box-shadow: 5px 5px 20px rgba(#000000, 0.1);
     border-radius: 15px;
   }
 
+  @media #{$sm, $xs} {
+    padding-bottom: 60px;
+  }
+
+  &__thumb {
+    @media #{$sm, $xs} {
+      width: 100px;
+      height: 100px;
+    }
+    & img {
+      @media #{$sm, $xs} {
+        width: 100px;
+        height: 100px;
+      }
+    }
+  }
+
+  &__content {
+    text-align: start;
+    & p {
+      @media #{$sm, $xs} {
+        font-size: 16px;
+        line-height: 20px;
+      }
+    }
+  }
+
   &__subtitle {
     line-height: 26px;
     margin-bottom: 0;
+    @media #{$sm, $xs} {
+      font-size: 18px;
+      line-height: 20px;
+    }
   }
 }

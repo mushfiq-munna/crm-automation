@@ -2,9 +2,14 @@
 
 .header {
   &-wrapper {
+    display: flex;
+    align-items: center;
     background: var(--primary-theme-color);
     padding: 20px 100px 20px 70px;
     box-shadow: 0 15px 30px rgba(#000000, 0.1);
+    @media #{$sm, $xs} {
+      padding: 13px 10px 17px 10px;
+    }
   }
 
   &-menu {
@@ -31,5 +36,30 @@
     display: flex;
     justify-content: start;
     align-items: center;
+    & img {
+      @media #{$sm, $xs} {
+        width: 130px;
+        height: 40px;
+      }
+    }
+  }
+
+  &-bar {
+    display: flex;
+    justify-content: end;
+    & a {
+      background: none;
+      display: inline-block;
+      line-height: 0;
+      padding: 10px 5px 0px 5px;
+
+      & i {
+        color: var(--color-black-2);
+        font-size: 28px;
+        @media #{$sm, $xs} {
+          font-size: 27px;
+        }
+      }
+    }
   }
 }

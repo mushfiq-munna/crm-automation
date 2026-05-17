@@ -8,8 +8,15 @@
   align-items: center;
   box-shadow: 5px 5px 20px rgba(#000000, 0.1);
 
+  @media #{$sm, $xs} {
+    padding: 20px;
+  }
+
   &__thumb {
     box-shadow: 5px 5px 20px rgba(#000000, 0.1);
+    @media #{$sm, $xs} {
+      margin-bottom: 20px;
+    }
   }
 
   &__title {
@@ -17,11 +24,22 @@
     &-2 {
       line-height: 43px;
     }
+
+    @media #{$sm, $xs} {
+      font-size: 20px;
+      line-height: 20px;
+      margin-bottom: 20px;
+    }
   }
 
   &__content {
     & p {
       line-height: 26px;
+
+      @media #{$sm, $xs} {
+        font-size: 16px;
+        margin-bottom: 20px;
+      }
     }
   }
 

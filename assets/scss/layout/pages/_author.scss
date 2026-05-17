@@ -5,6 +5,9 @@
     display: flex;
     justify-content: start;
     align-items: start;
+    &-2 {
+      justify-content: center;
+    }
     &-num {
       font-size: 53px;
       font-weight: bold;
