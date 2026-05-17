@@ -6860,6 +6860,12 @@ button:focus {
 .primary-btn {
   justify-content: end;
   align-items: right;
+  display: none;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 1601px) and (max-width: 3999px) {
+  .primary-btn {
+    display: block;
+  }
 }
 .primary-btn a {
   color: var(--primary-theme-color);
@@ -7512,13 +7518,15 @@ button:focus {
 }
 .ctasection__thumb {
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
-  width: 304px;
 }
 @media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
   .ctasection__thumb {
     margin-bottom: 20px;
     width: 280px;
   }
+}
+.ctasection__thumb-304 {
+  width: 304px;
 }
 @media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
   .ctasection__thumb img {

@@ -3,7 +3,10 @@
 .primary-btn {
   justify-content: end;
   align-items: right;
-
+  display: none;
+  @media #{$md, $xl, $lg, $xxl} {
+    display: block;
+  }
   & a {
     color: var(--primary-theme-color);
     font-size: 18px;
